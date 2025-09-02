@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Futuristic Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Snow Effects -->
+  <div id="snow-container" aria-hidden="true"></div>
+
+  <!-- Sidebar (Mobile Navigation) -->
+  <aside id="sidebar" class="sidebar" aria-label="Mobile Navigation">
+    <button class="closebtn" id="close-sidebar" aria-label="Close Sidebar">&times;</button>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" role="navigation">
+      <div class="container">
+        <a class="brand" href="#">Laurence Benjidict</a>
+        <button class="hamburger" id="open-sidebar" aria-label="Open Menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <section class="main-section">
+      <div class="container" style="display:flex; align-items:center; gap: 20px;">
+        <img src="photo/yawa.jpg" alt="Profile Photo" class="profile-image" tabindex="0" />
+        <div>
+          <h1 class="typewriter" aria-label="Welcome Message">Welcome to My Portfolio</h1>
+          <p class="lead"><strong>I'm Laurence Benjidict Mariñas Relatado</strong></p>
+          <a href="#about" class="btn smooth-hover" aria-label="Learn More About Me">Learn More About Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm a 3rd year BSIT student, and this portfolio is my final project.</p>
+        <p>I use <strong>HTML5</strong> for structure, <strong>CSS3</strong> for styling, and <strong>JavaScript</strong> for interaction.</p>
+        <p>I'm more focused on <strong>Front-End Development</strong>. Backend? Hmm… still learning!</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2>My Skills</h2>
+
+        <div class="skill" data-animate="true">
+          <span>HTML & CSS</span>
+          <div class="progress-bar" data-value="90"><span>0%</span></div>
+        </div>
+
+        <div class="skill" data-animate="true">
+          <span>JavaScript</span>
+          <div class="progress-bar" data-value="40"><span>0%</span></div>
+        </div>
+
+        <div class="skill" data-animate="true">
+          <span>Computer Hardware</span>
+          <div class="progress-bar" data-value="85"><span>0%</span></div>
+        </div>
+
+        <div class="skill" data-animate="true">
+          <span>Tulog</span>
+          <div class="progress-bar" data-value="100"><span>0%</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="cards">
+
+          <!-- Project 1 -->
+          <a href="2277G/2277G/index.html" target="_blank" class="card" tabindex="0">
+            <img src="photo/Screenshot (5).png" alt="Project 1 Screenshot" />
+            <h3>Project 1</h3>
+            <p>This is my first project in CC101.</p>
+          </a>
+
+          <!-- Project 2 -->
+          <a href="potchi/index.html" target="_blank" class="card" tabindex="0">
+            <img src="photo/iro.PNG" alt="Project 2 Screenshot" />
+            <h3>My First HTML Page</h3>
+            <p>Simple static HTML web page.</p>
+          </a>
+
+          <!-- Project 3 -->
+          <a href="ict/index.html" target="_blank" class="card" tabindex="0">
+            <img src="https://via.placeholder.com/300x200" alt="Project 3 Screenshot" />
+            <h3>My First Ever Portfolio</h3>
+            <p>This was my Grade 12 portfolio in TVL-ICT/CSS track.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form>
+          <input type="text" placeholder="Name" required aria-required="true" />
+          <input type="email" placeholder="Email" required aria-required="true" />
+          <textarea placeholder="Message" rows="4" required aria-required="true"></textarea>
+          <button type="submit" class="btn smooth-hover">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Benjidict | PF117/2563D
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
